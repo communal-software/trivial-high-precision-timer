@@ -2,6 +2,21 @@
 
 A cross-platform high-precision monotonic timer for Common Lisp.
 
+## Installation
+
+From the takeiteasy Quicklisp dist:
+
+```lisp
+(ql-dist:install-dist "https://takeiteasy.github.io/ql-dist/dist/takeiteasy.txt")
+(ql:quickload :trivial-high-precision-timer)
+```
+
+Or clone into Quicklisp's local-projects:
+
+```sh
+git clone https://github.com/takeiteasy/trivial-high-precision-timer ~/quicklisp/local-projects/trivial-high-precision-timer
+```
+
 ## Quick Start
 
 ```lisp
