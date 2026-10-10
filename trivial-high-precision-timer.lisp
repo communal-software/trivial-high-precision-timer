@@ -103,7 +103,7 @@ JSCL has no DOUBLE-FLOAT type specifier; its FLOAT is a JS double regardless."
   #+(and unix (not darwin))
   (progn
     ;; TODO: tv-sec is :long, which is wrong on 32-bit platforms with a 64-bit
-    ;; time_t (glibc >= 2.34). Needs a width probe. See ticket #2.
+    ;; time_t (glibc >= 2.34). Needs a width probe. See https://github.com/communal-software/trivial-high-precision-timer/issues/1.
     (cffi:defcstruct timespec
       (tv-sec :long)
       (tv-nsec :long))

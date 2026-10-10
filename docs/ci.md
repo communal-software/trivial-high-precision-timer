@@ -43,12 +43,6 @@ Lisp name in the matrix (`sbcl`, `ccl`, `ecl`, `abcl`, `clisp`, `jscl`).
 Run the suite locally first; see [testing](testing.md#running-locally). Dispatch
 a slice for the platforms you cannot run.
 
-## sr.ht builds
-
-[`.build.yml`](../.build.yml) runs the suite on Linux with SBCL on every push
-to the sr.ht mirror, at no GitHub cost. It covers the same ground as the tier 1
-SBCL job.
-
 ## Cost
 
 Private repositories bill macOS minutes at about ten times and Windows at about

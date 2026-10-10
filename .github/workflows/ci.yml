@@ -138,7 +138,7 @@ jobs:
       - name: Build JSCL
         env:
           # Pinned: JSCL is a moving target and its codegen bugs are this
-          # repo's problem only when we choose to take them. See ticket #4.
+          # repo's problem only when we choose to take them. See https://github.com/communal-software/trivial-high-precision-timer/issues/3.
           JSCL_COMMIT: 7981e5a5ba5821d4c1f862eec1cbda9ec3c51e77
         run: |
           git clone https://github.com/jscl-project/jscl.git "$RUNNER_TEMP/jscl"

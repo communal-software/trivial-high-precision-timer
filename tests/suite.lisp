@@ -101,7 +101,7 @@
 
 (deftest refresh-rate-exact-and-inside-tolerance
   ;; The bounds are written without a negative literal operand: JSCL
-  ;; miscompiles (- a b -1) into invalid JavaScript. See ticket #4.
+  ;; miscompiles (- a b -1) into invalid JavaScript. See https://github.com/communal-software/trivial-high-precision-timer/issues/3.
   (let ((timer (make-precision-timer :resolution :ns)))
     (dotimes (i (length *refresh-rates*))
       (let* ((entry (aref *refresh-rates* i))
